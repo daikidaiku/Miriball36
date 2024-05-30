@@ -451,7 +451,7 @@
     ]
   },
   "meta": {
-    "filename": "Miriball36 v1.0.kicad_pro",
+    "filename": "Miriball36.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -486,7 +486,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "Miriball36 v1.0.net",
-      "plot": "",
+      "plot": "/Users/daiki_daiku/Documents/keyboard/発注/20240530_JLC/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

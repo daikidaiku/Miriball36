@@ -156,8 +156,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J2"
-				(at -0.0762 8.89 0)
+			(property "Reference" "J"
+				(at 0 4.826 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -165,14 +165,14 @@
 				)
 			)
 			(property "Value" "MJ-4PP-9"
-				(at -0.0762 6.35 0)
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Miriball36:TRRS_MJ-4PP-9"
+			(property "Footprint" "Miriball36:MJ-4PP-9"
 				(at 0 6.604 0)
 				(effects
 					(font
@@ -1159,6 +1159,144 @@
 				)
 			)
 		)
+		(symbol "kbd:OLED"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "OL"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.2954 1.2954)
+					)
+				)
+			)
+			(property "Value" "OLED"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.1938 1.1938)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OLED_0_1"
+				(rectangle
+					(start -13.97 8.89)
+					(end 15.24 -7.62)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "OLED_1_1"
+				(pin bidirectional line
+					(at -19.05 6.35 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -19.05 2.54 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -19.05 -1.27 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -19.05 -5.08 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1641,20 +1779,12 @@
 		(uuid "f5f57fcd-b418-4c3b-833c-aa9cfb00f118")
 	)
 	(no_connect
-		(at 49.53 43.18)
-		(uuid "013a22c2-aef1-4b22-bb2e-501eb192288f")
-	)
-	(no_connect
 		(at 49.53 55.88)
 		(uuid "11c24007-e22b-4432-8eac-195c0f9d3859")
 	)
 	(no_connect
 		(at 85.09 55.88)
 		(uuid "42b48150-5203-4a8e-a93c-94f847bb157f")
-	)
-	(no_connect
-		(at 49.53 40.64)
-		(uuid "434c3b7e-ffe2-4be1-9bd4-c0583ec949e6")
 	)
 	(no_connect
 		(at 118.11 29.21)
@@ -2192,6 +2322,50 @@
 			)
 		)
 	)
+	(global_label "scl"
+		(shape input)
+		(at 160.02 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19553051-f00c-4b57-aac6-eb9b9c2533ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.2529 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "sda"
+		(shape input)
+		(at 49.53 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1a947bb5-79d4-455c-bc63-5ee78aaf6503")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.2187 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "col0"
 		(shape input)
 		(at 85.09 40.64 0)
@@ -2544,6 +2718,28 @@
 			)
 		)
 	)
+	(global_label "sda"
+		(shape input)
+		(at 160.02 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc5b629a-4170-44f4-9559-5d49914910ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.7087 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "row1"
 		(shape input)
 		(at 49.53 48.26 180)
@@ -2584,6 +2780,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "scl"
+		(shape input)
+		(at 49.53 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9eb3c33-04bc-49b3-8f6e-c367dd469a52")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.7629 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2993,6 +3211,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 160.02 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16d45818-6470-4728-9353-ff579fa9d432")
+		(property "Reference" "#PWR09"
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30402a2d-13d5-4742-8673-62c24422e424")
+		)
+		(instances
+			(project "Miriball36"
+				(path "/a54d795d-7b05-4c8e-9001-b6349d5934b6"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Miriball36:1N4148W")
 		(at 64.77 127 90)
 		(unit 1)
@@ -3125,6 +3409,73 @@
 			(project "Miriball36"
 				(path "/a54d795d-7b05-4c8e-9001-b6349d5934b6"
 					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 160.02 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "289e2e0d-2636-43e0-bcd9-183f148914c4")
+		(property "Reference" "#PWR010"
+			(at 163.83 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 156.21 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 160.02 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "336aa78c-c849-4c49-bc8a-52a82f0d8f44")
+		)
+		(instances
+			(project "Miriball36"
+				(path "/a54d795d-7b05-4c8e-9001-b6349d5934b6"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3728,6 +4079,82 @@
 			(project "Miriball36"
 				(path "/a54d795d-7b05-4c8e-9001-b6349d5934b6"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kbd:OLED")
+		(at 179.07 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5380c1e7-da96-436d-8228-76cc9891ac9a")
+		(property "Reference" "OL1"
+			(at 195.58 60.325 0)
+			(effects
+				(font
+					(size 1.2954 1.2954)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLED"
+			(at 195.58 62.865 0)
+			(effects
+				(font
+					(size 1.1938 1.1938)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "yuuichi_kbd:OLED_4Pin"
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "22afb024-0000-4fb6-b2f4-8082becc089a")
+		)
+		(pin "4"
+			(uuid "5e0b5654-fd3f-4873-b907-a7d9a22e2a4c")
+		)
+		(pin "2"
+			(uuid "23ff927c-956f-4a12-abde-d9a1443cd091")
+		)
+		(pin "1"
+			(uuid "192131b1-4725-4474-92c2-4f5e9c5c164f")
+		)
+		(instances
+			(project "Miriball36"
+				(path "/a54d795d-7b05-4c8e-9001-b6349d5934b6"
+					(reference "OL1")
 					(unit 1)
 				)
 			)

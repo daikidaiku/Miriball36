@@ -1,4 +1,4 @@
-23796333127262965
+23811763507220658
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63574,6 +63574,20 @@ Yellow 5381 Series LED
 2
 2
 Miriball36
+CherryMX_Hotswap_Reversible
+
+
+0
+4
+2
+Miriball36
+CherryMX_Hotswap_Reversible_
+
+
+0
+8
+2
+Miriball36
 CherryMX_KailhLowProfile_Hotswap_edge
 
 
@@ -63586,6 +63600,13 @@ CherryMX_KailhLowProfile_Hotswap_edge_stab
 
 0
 12
+2
+Miriball36
+CherryMX_TH_Hotswap_Reversible
+
+
+0
+8
 2
 Miriball36
 Diode_1N4148W
@@ -63608,6 +63629,13 @@ HOLE_M2_CASEPCB
 0
 1
 0
+Miriball36
+MX_Choc_Reversible_LED
+
+
+0
+17
+6
 Miriball36
 ProMicro2
 
@@ -95332,6 +95360,34 @@ Varistor VF
 0
 2
 2
+daiki_daiku_footprints
+icon
+
+
+0
+0
+0
+daiki_daiku_footprints
+logo
+
+
+0
+0
+0
+daiki_daiku_footprints
+qr
+
+
+0
+0
+0
+daiki_daiku_footprints
+qr_flip
+
+
+0
+0
+0
 kbd
 Breakaway_Tabs
 
@@ -96886,6 +96942,13 @@ solder_jumper
 0
 2
 2
+kicad
+AZ1UBALL
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+8
+4
 yuuichi_kbd
 CherryMX_Hotswap
 
