@@ -18754,7 +18754,7 @@
 	(footprint "daiki_daiku_footprints:logo"
 		(layer "F.Cu")
 		(uuid "fb0b6184-8d92-4fa7-a621-74e4e5d87f47")
-		(at 156.651124 68.69 -90)
+		(at 156.74 67.44 -90)
 		(property "Reference" "G***"
 			(at 0 0 90)
 			(layer "F.SilkS")
